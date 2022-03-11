@@ -1,5 +1,5 @@
 {
-  "name": "<INPUT REPOSITORY NAME>",
+  "name": "apibox",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -7,15 +7,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+<INPUT GIT URL> ex. https://github.com/woodonggyu/default-repo-template.git"
+    "url": "git+https://github.com/woodonggyu/apibox.git"
   },
   "author": "Donggyu Woo",
   "license": "MIT",
   "bugs": {
-    "url": "<INPUT REPOSITORY URL>/issues"
+    "url": "https://github.com/woodonggyu/apibox/issues"
   },
-  "homepage": "<INPUT REPOSITORY URL>#readme",
+  "homepage": "https://github.com/woodonggyu/apibox#readme",
   "dependencies": {
-    "github-release-notes": "^0.17.3"
+    "github-release-notes": "^0.13.1",
+    "package.json": "^2.0.1"
   }
 }
