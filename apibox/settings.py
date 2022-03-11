@@ -55,15 +55,12 @@ DJANGO_DEFAULT_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
+    'debug_toolbar',
     'drf_spectacular',
     'rest_framework'
 ]
 
-USER_APPS = [
-    'apps.notification.slack.apps.SlackConfig'
-]
-
-INSTALLED_APPS = DJANGO_DEFAULT_APPS + THIRD_PARTY_APPS + USER_APPS
+INSTALLED_APPS = DJANGO_DEFAULT_APPS + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -73,7 +70,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware'
 ]
+
+INTERNAL_IPS = ('127.0.0.1')
 
 ROOT_URLCONF = 'apibox.urls'
 
